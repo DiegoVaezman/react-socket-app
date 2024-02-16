@@ -5,7 +5,7 @@ export const SocketContext = createContext();
 
 export const SocketProvider = ({ children }) => {
   const { socket, online } = useSocket(
-    "https://peach-legend-salmon.glitch.me/"
+    "https://charm-skitter-geography.glitch.me/"
   );
   return (
     <SocketContext.Provider value={{ socket, online }}>
