@@ -4,9 +4,7 @@ import { useSocket } from "../hooks/useSocket";
 export const SocketContext = createContext();
 
 export const SocketProvider = ({ children }) => {
-  const { socket, online } = useSocket(
-    "https://charm-skitter-geography.glitch.me/"
-  );
+  const { socket, online } = useSocket("https://robust-iris-find.glitch.me/");
   return (
     <SocketContext.Provider value={{ socket, online }}>
       {children}
